@@ -1,7 +1,10 @@
 import colorgram
-import turtle as turtle_module
+import turtle as turtle_brush
 import random
 
+# commented out section below when active uses colorgram to identify the (30) most common
+# colors in the image file specified. The rbg values where then used to create the color_list
+#
 # colors = colorgram.extract('image.jpg', 30)
 #
 # rgb_colors = []
@@ -15,6 +18,7 @@ import random
 #
 # print(rgb_colors)
 
+# tuples generated via colorgram based on sample image
 color_list = [(246, 245, 243), (234, 240, 246), (240, 246, 243), (247, 239, 243),
               (131, 165, 206), (225, 151, 100), (32, 41, 59), (200, 134, 147),
               (235, 212, 87), (166, 56, 46), (39, 104, 153), (141, 184, 161),
@@ -24,27 +28,27 @@ color_list = [(246, 245, 243), (234, 240, 246), (240, 246, 243), (247, 239, 243)
               (190, 99, 108), (32, 59, 108), (103, 127, 163), (34, 151, 210),
               (175, 200, 188), (66, 66, 56)]
 
-turtle_module.colormode(255)
-timmy = turtle_module.Turtle()
-timmy.penup()
-timmy.speed("fastest")
-timmy.hideturtle()
-timmy.setheading(225)
-timmy.forward(250)
-timmy.setheading(0)
+turtle_brush.colormode(255)
+brush = turtle_brush.Turtle()
+brush.penup()
+brush.speed("fastest")
+brush.hideturtle()
+brush.setheading(225)
+brush.forward(250)
+brush.setheading(0)
 
 total_dots = 100
 
 for dot_count in range(1, total_dots + 1):
-    timmy.dot(20, random.choice(color_list))
-    timmy.forward(50)
+    brush.dot(20, random.choice(color_list))
+    brush.forward(50)
 
     if dot_count % 10 == 0:
-        timmy.setheading(90)
-        timmy.forward(50)
-        timmy.setheading(180)
-        timmy.forward(500)
-        timmy.setheading(0)
+        brush.setheading(90)
+        brush.forward(50)
+        brush.setheading(180)
+        brush.forward(500)
+        brush.setheading(0)
 
 
 screen = turtle_module.Screen()
