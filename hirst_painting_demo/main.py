@@ -39,6 +39,7 @@ brush.setheading(0)
 
 total_dots = 100
 
+# "paint" random colored dot from color_list then advance brush to next location
 for dot_count in range(1, total_dots + 1):
     brush.dot(20, random.choice(color_list))
     brush.forward(50)
@@ -51,5 +52,5 @@ for dot_count in range(1, total_dots + 1):
         brush.setheading(0)
 
 
-screen = turtle_module.Screen()
+screen = turtle_brush.Screen()
 screen.exitonclick()
