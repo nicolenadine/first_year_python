@@ -1,3 +1,7 @@
+# originally created in replit so it makes use of the clear() command
+# to clear the screen between games. So it will require slight tweaking/commenting out
+# prior to running outside replit
+
 import random
 from art import logo
 from replit import clear
@@ -58,6 +62,8 @@ def dealers_turn(hand):
         draw_card(hand)
         dealers_turn(hand)
 
+# check to see if a hand consisting of at least two cards has a total = 21
+# if yes this means the player has a "blackjack" hand
 def check_blackjack(hand):
     if calculate_total(hand) == 21 and len(hand) == 2:
         return True
@@ -96,6 +102,7 @@ def play_game():
             continue
 
     dealers_turn(computer_hand)
+    
     if check_blackjack(computer_hand) == True:
         print("Dealer has a Blackjack. Dealer Wins")
         game_over = True
