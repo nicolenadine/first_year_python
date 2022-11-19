@@ -15,7 +15,7 @@ scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkey(player.go_up, "Up")
-
+screen.onkey(player.go_back, "Down")
 
 game_is_on = True
 while game_is_on:
@@ -36,5 +36,9 @@ while game_is_on:
         player.return_to_start()
         car_manager.level_up()
         scoreboard.increase_level()
+
+    # if player moves backward from starting line and goes off screen
+    if player.is_off_screen():
+        player.return_to_start()
 
 screen.exitonclick()
