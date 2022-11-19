@@ -17,8 +17,17 @@ class Player(Turtle):
     def go_up(self):
         self.forward(MOVE_DISTANCE)
 
+    def go_back(self):
+        self.back(MOVE_DISTANCE)
+
     def is_at_finish_line(self):
         if self.ycor() > FINISH_LINE_Y:
+            return True
+        else:
+            return False
+
+    def is_off_screen(self):
+        if self.ycor() < -300:
             return True
         else:
             return False
