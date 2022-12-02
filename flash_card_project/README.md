@@ -10,10 +10,10 @@ and then adding a csv into the data folder with a column row structure shown bel
 |     word      |  translation  |
 
 ### Current Features (Dec 1st 2022)
-* Displays a random word from the list of words to learn for 3 seconds and then reveals the correct translation
-  User then checks the corresponding button to indicate whether they knew the word or did not no the word.
-  If word if known then it is removed from the word list and the save file is updated. On subsequent runs the program
-  will use the save file words_to_learn.csv which contains only words that still need to be mastered.
+* Displays a random word from the list of words to learn for 3 seconds and then reveals the correct translation.
+  User then checks the corresponding button to indicate whether they knew the word or did not know the word.
+  If word was known then it is removed from the word list and the save file is updated. On subsequent runs the program
+  will use the generated save file words_to_learn.csv which contains only words that still need to be mastered.
   
 ### Planned Features 
 * Start screen explaining game play
