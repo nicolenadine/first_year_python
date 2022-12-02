@@ -1,4 +1,4 @@
-# Day 31 Flash Card Practice 
+# Day 31 Flash Card Language Learning App
 
 Current file set up is set to practice the 100 most frequent words in the French language.
 Can be easily configured to support any language by updating the constant variables PRACTICE_LANGUAGE and LANGUAGE
