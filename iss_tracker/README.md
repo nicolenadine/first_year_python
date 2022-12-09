@@ -5,8 +5,8 @@ and send a notification email when it is above the specified location.
 
 
 My goal with this applicaiton was to practice interacting with two APIs 
-* [ISS Location]("http://open-notify.org/Open-Notify-API/ISS-Location-Now")
-* [Sunrise & Sunset]("https://sunrise-sunset.org/api")
+* [ISS Location](http://open-notify.org/Open-Notify-API/ISS-Location-Now)
+* [Sunrise & Sunset](https://sunrise-sunset.org/api)
 
 I also explored SMTP through python's SMTPLIB package. 
 
