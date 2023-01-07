@@ -5,15 +5,16 @@
 # Enjoy
 
 import requests
+import os
 from datetime import datetime
 import smtplib
 import time
 
-MY_EMAIL = ""                   # Add your email here
-MY_PASSWORD = ""                # Add your password here
-SERVER_SMTP = "smtp@gmail.com"  # Change if you use provider other than gmail
-MY_LAT = 37.053108              # Your latitude
-MY_LONG = -122.074097           # Your longitude
+MY_EMAIL = os.environ.get("EMAIL")                   # Sender email
+MY_PASSWORD = os.environ.get("PASSWORD")             # Sender password for email account
+SERVER_SMTP = os.environ.get("SMTP_SERVER_EMAIL")    # SMTP Server email address for above email account 
+MY_LAT = os.environ.get("LAT_CORDINATES")            # Latitude of location
+MY_LONG = os.environ.get("LON_CORDINATES")           # Longitude of location
 
 
 def is_iss_overhead():
