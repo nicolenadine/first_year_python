@@ -10,4 +10,9 @@ My goal with this applicaiton was to practice interacting with two APIs
 
 I also explored SMTP through python's SMTPLIB package. 
 
+### UPDATE 1/8/2023
+I recently learned about using environment variables to improve the security of my code. 
+So, I updated all of the variables that would contain private data (previous I left it as empty strings)
+to instead use the os module to utilize environment variables. 
+
 ### Enjoy!
